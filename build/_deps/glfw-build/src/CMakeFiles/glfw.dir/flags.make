@@ -6,7 +6,7 @@ C_DEFINES = -D_GLFW_USE_CONFIG_H
 
 C_INCLUDES = -I/Users/dev.daksh/code/pulsar/build/_deps/glfw-src/include -I/Users/dev.daksh/code/pulsar/build/_deps/glfw-src/src -I/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/src
 
-C_FLAGSarm64 = -std=gnu99 -arch arm64 -fPIC -Wall
+C_FLAGSarm64 = -O3 -DNDEBUG -std=gnu99 -arch arm64 -fPIC -Wall
 
-C_FLAGS = -std=gnu99 -arch arm64 -fPIC -Wall
+C_FLAGS = -O3 -DNDEBUG -std=gnu99 -arch arm64 -fPIC -Wall
 

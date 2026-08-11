@@ -1,0 +1,13 @@
+/Users/dev.daksh/code/pulsar/build/CMakeFiles/pulsar_sim.dir
+/Users/dev.daksh/code/pulsar/build/CMakeFiles/edit_cache.dir
+/Users/dev.daksh/code/pulsar/build/CMakeFiles/rebuild_cache.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/CMakeFiles/edit_cache.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/CMakeFiles/rebuild_cache.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/src/CMakeFiles/edit_cache.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/src/CMakeFiles/rebuild_cache.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glad-build/CMakeFiles/glad-generate-files.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glad-build/CMakeFiles/glad.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glad-build/CMakeFiles/edit_cache.dir
+/Users/dev.daksh/code/pulsar/build/_deps/glad-build/CMakeFiles/rebuild_cache.dir

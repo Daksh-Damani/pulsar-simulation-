@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/dev.daksh/code/pulsar/build/cmake_install.cmake",
+		"/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/cmake_install.cmake",
+		"/Users/dev.daksh/code/pulsar/build/_deps/glfw-build/src/cmake_install.cmake",
+		"/Users/dev.daksh/code/pulsar/build/_deps/glad-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

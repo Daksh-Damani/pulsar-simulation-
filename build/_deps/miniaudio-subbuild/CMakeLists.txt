@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
 # file LICENSE.rst or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION 4.3.2)
+cmake_minimum_required(VERSION 4.4.2)
 
 # Reject any attempt to use a toolchain file. We must not use one because
 # we could be downloading it here. If the CMAKE_TOOLCHAIN_FILE environment
@@ -20,8 +20,8 @@ project(miniaudio-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(miniaudio-populate
                      "UPDATE_DISCONNECTED" "False" "DOWNLOAD_EXTRACT_TIMESTAMP" "TRUE" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "URL" "https://github.com/mackron/miniaudio/archive/refs/tags/0.11.21.tar.gz"
-                    SOURCE_DIR          "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-src"
-                    BINARY_DIR          "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-build"
+                    SOURCE_DIR          "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-src"
+                    BINARY_DIR          "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

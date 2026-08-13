@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=url
-command=/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/download-miniaudio-populate.cmake;COMMAND;/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/verify-miniaudio-populate.cmake;COMMAND;/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/extract-miniaudio-populate.cmake
-source_dir=/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-src
-work_dir=/Users/dev.daksh/code/pulsar/build/_deps
+command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/download-miniaudio-populate.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/verify-miniaudio-populate.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/extract-miniaudio-populate.cmake
+source_dir=E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-src
+work_dir=E:/Simulations/pulsar-simulation-/build/_deps
 url(s)=https://github.com/mackron/miniaudio/archive/refs/tags/0.11.21.tar.gz
 hash=
       no_extract=

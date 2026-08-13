@@ -362,29 +362,29 @@ float drawString_MATH(vec2 p, vec2 size) {
     return d;
 }
 
-float drawString_DAKSH(vec2 p, vec2 size) {
-    float d = 0.0;
-    float w = size.x / 5.0;
-    d = max(d, drawLetter(68, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // D
-    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
-    d = max(d, drawLetter(75, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // K
-    d = max(d, drawLetter(83, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // S
-    d = max(d, drawLetter(72, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // H
-    return d;
-}
+// float drawString_DAKSH(vec2 p, vec2 size) {
+//     float d = 0.0;
+//     float w = size.x / 5.0;
+//     d = max(d, drawLetter(68, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // D
+//     d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+//     d = max(d, drawLetter(75, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // K
+//     d = max(d, drawLetter(83, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // S
+//     d = max(d, drawLetter(72, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // H
+//     return d;
+// }
 
-float drawString_HUTANSH(vec2 p, vec2 size) {
-    float d = 0.0;
-    float w = size.x / 7.0;
-    d = max(d, drawLetter(72, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // H
-    d = max(d, drawLetter(85, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // U
-    d = max(d, drawLetter(84, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // T
-    d = max(d, drawLetter(65, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // A
-    d = max(d, drawLetter(78, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // N
-    d = max(d, drawLetter(83, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // S
-    d = max(d, drawLetter(72, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // H
-    return d;
-}
+// float drawString_HUTANSH(vec2 p, vec2 size) {
+//     float d = 0.0;
+//     float w = size.x / 7.0;
+//     d = max(d, drawLetter(72, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // H
+//     d = max(d, drawLetter(85, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // U
+//     d = max(d, drawLetter(84, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // T
+//     d = max(d, drawLetter(65, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // A
+//     d = max(d, drawLetter(78, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // N
+//     d = max(d, drawLetter(83, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // S
+//     d = max(d, drawLetter(72, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // H
+//     return d;
+// }
 
 float drawString_MASS(vec2 p, vec2 size) {
     float d = 0.0;
@@ -823,9 +823,9 @@ int main() {
             ImGui::SetNextWindowPos(ImVec2((float)displayWidth - 385, (float)displayHeight - 40), ImGuiCond_Always);
             ImGui::SetNextWindowSize(ImVec2(375, 30), ImGuiCond_Always);
             ImGui::Begin("Credits Overlay", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoBackground);
-            ImGui::TextColored(ImVec4(0.0f, 0.95f, 1.0f, 0.65f), "Developer: Daksh Damani");
-            ImGui::SameLine(190);
-            ImGui::TextColored(ImVec4(1.0f, 0.25f, 0.7f, 0.65f), "Mathsby: Hutansh Mishra");
+            // ImGui::TextColored(ImVec4(0.0f, 0.95f, 1.0f, 0.65f), "Developer: Daksh Damani");
+            // ImGui::SameLine(190);
+            // ImGui::TextColored(ImVec4(1.0f, 0.25f, 0.7f, 0.65f), "Mathsby: Hutansh Mishra");
             ImGui::End();
         }
 
@@ -906,7 +906,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
                       << "     cos(beta) = v_camera . m_magnetic\n\n"
                       << " PROJECT CREDITS:\n"
                       << "  - Developer                  : Daksh Damani\n"
-                      << "  - Mathematics & Astrophysics : Hutansh Mishra\n\n"
+                      << "  - Mathematics  : Hutansh Mishra\n\n"
                       << " ABOUT THIS PROJECT:\n"
                       << "  - Graphics: GPU-accelerated volumetric raymarching in GLSL.\n"
                       << "  - Audio: Real-time procedural synthesis synchronized with\n"

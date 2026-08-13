@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # Make file names absolute:
 #
-get_filename_component(filename "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz" ABSOLUTE)
-get_filename_component(directory "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-src" ABSOLUTE)
+get_filename_component(filename "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz" ABSOLUTE)
+get_filename_component(directory "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-src" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

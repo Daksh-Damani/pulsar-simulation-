@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-if(EXISTS "/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt" AND EXISTS "/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitinfo.txt" AND
-  "/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt" IS_NEWER_THAN "/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitinfo.txt")
+if(EXISTS "E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt" AND EXISTS "E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitinfo.txt" AND
+  "E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt" IS_NEWER_THAN "E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt'"
+    "'E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,22 +22,27 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "/Users/dev.daksh/code/pulsar/build/_deps/glfw-src"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "E:/Simulations/pulsar-simulation-/build/_deps/glfw-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: '/Users/dev.daksh/code/pulsar/build/_deps/glfw-src'")
+  message(FATAL_ERROR "Failed to remove directory: 'E:/Simulations/pulsar-simulation-/build/_deps/glfw-src'")
 endif()
 
-# try the clone 3 times in case there is an odd git clone issue
+# try the clone 1 + N times in case there is an odd git clone issue
 set(error_code 1)
 set(number_of_tries 0)
-while(error_code AND number_of_tries LESS 3)
+math(EXPR max_tries "1 + 2")
+while(error_code AND number_of_tries LESS ${max_tries})
+  if(number_of_tries GREATER 0 AND 0 GREATER 0)
+    message(STATUS "Retry #${number_of_tries}, waiting 0 seconds before next attempt...")
+    execute_process(COMMAND ${CMAKE_COMMAND} -E sleep 0)
+  endif()
   execute_process(
-    COMMAND "/usr/bin/git"
+    COMMAND "C:/Program Files/Git/cmd/git.exe"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/glfw/glfw.git" "glfw-src"
-    WORKING_DIRECTORY "/Users/dev.daksh/code/pulsar/build/_deps"
+    WORKING_DIRECTORY "E:/Simulations/pulsar-simulation-/build/_deps"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -47,13 +52,13 @@ if(number_of_tries GREATER 1)
   message(NOTICE "Had to git clone more than once: ${number_of_tries} times.")
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to clone repository: 'https://github.com/glfw/glfw.git'")
+  message(FATAL_ERROR "Failed to clone repository:\n  'https://github.com/glfw/glfw.git'")
 endif()
 
 execute_process(
-  COMMAND "/usr/bin/git"
+  COMMAND "C:/Program Files/Git/cmd/git.exe"
           checkout "3.3.8" --
-  WORKING_DIRECTORY "/Users/dev.daksh/code/pulsar/build/_deps/glfw-src"
+  WORKING_DIRECTORY "E:/Simulations/pulsar-simulation-/build/_deps/glfw-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
@@ -64,24 +69,24 @@ endif()
 set(init_submodules TRUE)
 if(init_submodules)
   execute_process(
-    COMMAND "/usr/bin/git" 
+    COMMAND "C:/Program Files/Git/cmd/git.exe" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "/Users/dev.daksh/code/pulsar/build/_deps/glfw-src"
+    WORKING_DIRECTORY "E:/Simulations/pulsar-simulation-/build/_deps/glfw-src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: '/Users/dev.daksh/code/pulsar/build/_deps/glfw-src'")
+  message(FATAL_ERROR "Failed to update submodules in: 'E:/Simulations/pulsar-simulation-/build/_deps/glfw-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitinfo.txt" "/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitinfo.txt" "E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: '/Users/dev.daksh/code/pulsar/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'E:/Simulations/pulsar-simulation-/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-gitclone-lastrun.txt'")
 endif()

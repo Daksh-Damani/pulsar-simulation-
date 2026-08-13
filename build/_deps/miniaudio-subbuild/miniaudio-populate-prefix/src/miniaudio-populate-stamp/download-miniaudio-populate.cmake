@@ -22,14 +22,14 @@ function(check_file_hash has_hash hash_is_good)
   set("${has_hash}" TRUE PARENT_SCOPE)
 
   message(VERBOSE "verifying file...
-       file='/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'")
+       file='E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'")
 
-  file("" "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz" actual_value)
+  file("" "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz" actual_value)
 
   if(NOT "${actual_value}" STREQUAL "")
     set("${hash_is_good}" FALSE PARENT_SCOPE)
     message(VERBOSE " hash of
-    /Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz
+    E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz
   does not match expected value
     expected: ''
       actual: '${actual_value}'")
@@ -71,32 +71,32 @@ function(sleep_before_download attempt)
   execute_process(COMMAND "${CMAKE_COMMAND}" -E sleep "${sleep_seconds}")
 endfunction()
 
-if(EXISTS "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
+if(EXISTS "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
   check_file_hash(has_hash hash_is_good)
   if(has_hash)
     if(hash_is_good)
       message(VERBOSE "File already exists and hash match (skip download):
-  file='/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'
+  file='E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'
   =''"
       )
       return()
     else()
       message(VERBOSE "File already exists but hash mismatch. Removing...")
-      file(REMOVE "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
+      file(REMOVE "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
     endif()
   else()
     message(VERBOSE "File already exists but no hash specified (use URL_HASH):
-  file='/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'
+  file='E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'
 Old file will be removed and new file downloaded from URL."
     )
-    file(REMOVE "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
+    file(REMOVE "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
   endif()
 endif()
 
 set(retry_number 5)
 
 message(VERBOSE "Downloading...
-   dst='/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'
+   dst='E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz'
    timeout='none'
    inactivity timeout='none'"
 )
@@ -119,7 +119,7 @@ foreach(i RANGE ${retry_number})
 
       file(
         DOWNLOAD
-        "${url}" "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz"
+        "${url}" "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz"
         SHOW_PROGRESS
         # no TIMEOUT
         # no INACTIVITY_TIMEOUT
@@ -136,7 +136,7 @@ foreach(i RANGE ${retry_number})
         check_file_hash(has_hash hash_is_good)
         if(has_hash AND NOT hash_is_good)
           message(VERBOSE "Hash mismatch, removing...")
-          file(REMOVE "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
+          file(REMOVE "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/0.11.21.tar.gz")
         else()
           message(VERBOSE "Downloading... done")
           return()

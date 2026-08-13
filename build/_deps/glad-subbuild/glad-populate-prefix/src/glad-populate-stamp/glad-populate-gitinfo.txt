@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=/opt/homebrew/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/dev.daksh/code/pulsar/build/_deps/glad-subbuild/glad-populate-prefix/tmp/glad-populate-gitclone.cmake
-source_dir=/Users/dev.daksh/code/pulsar/build/_deps/glad-src
-work_dir=/Users/dev.daksh/code/pulsar/build/_deps
+command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/Simulations/pulsar-simulation-/build/_deps/glad-subbuild/glad-populate-prefix/tmp/glad-populate-gitclone.cmake
+source_dir=E:/Simulations/pulsar-simulation-/build/_deps/glad-src
+work_dir=E:/Simulations/pulsar-simulation-/build/_deps
 repository=https://github.com/Dav1dde/glad.git
 remote=origin
 init_submodules=TRUE

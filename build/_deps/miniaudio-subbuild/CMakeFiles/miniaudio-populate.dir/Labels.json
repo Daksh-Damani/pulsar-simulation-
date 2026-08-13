@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/cea0156220232c1e4d8854f39ee4081f/miniaudio-populate.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate-complete.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/454665b9fbe7ef2df7995615794b0dc3/miniaudio-populate-complete.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-build.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-configure.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-download.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-install.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-mkdir.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-patch.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-test.rule"
 		},
 		{
-			"file" : "/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update.rule"
+			"file" : "E:/Simulations/pulsar-simulation-/build/_deps/miniaudio-subbuild/CMakeFiles/8bc685b9225cbbe62b7d6351ddf42e54/miniaudio-populate-update.rule"
 		}
 	],
 	"target" : 

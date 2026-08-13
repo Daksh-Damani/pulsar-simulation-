@@ -304,6 +304,10 @@ FETCHCONTENT_SOURCE_DIR_GLAD:PATH=
 FETCHCONTENT_SOURCE_DIR_GLFW:PATH=
 
 //When not empty, overrides where to find pre-populated content
+// for imgui
+FETCHCONTENT_SOURCE_DIR_IMGUI:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for miniaudio
 FETCHCONTENT_SOURCE_DIR_MINIAUDIO:PATH=
 
@@ -315,6 +319,9 @@ FETCHCONTENT_UPDATES_DISCONNECTED_GLAD:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of glfw
 FETCHCONTENT_UPDATES_DISCONNECTED_GLFW:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of imgui
+FETCHCONTENT_UPDATES_DISCONNECTED_IMGUI:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of miniaudio
 FETCHCONTENT_UPDATES_DISCONNECTED_MINIAUDIO:BOOL=OFF

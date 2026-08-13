@@ -1,3 +1,4 @@
+/Users/dev.daksh/code/pulsar/build/CMakeFiles/imgui.dir
 /Users/dev.daksh/code/pulsar/build/CMakeFiles/pulsar_sim.dir
 /Users/dev.daksh/code/pulsar/build/CMakeFiles/edit_cache.dir
 /Users/dev.daksh/code/pulsar/build/CMakeFiles/rebuild_cache.dir

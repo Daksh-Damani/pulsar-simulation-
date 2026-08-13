@@ -167,6 +167,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/glfw-subbuild/CMakeLists.txt"
   "_deps/glad-subbuild/CMakeLists.txt"
   "_deps/miniaudio-subbuild/CMakeLists.txt"
+  "_deps/imgui-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/glfw-build/src/glfw3Config.cmake"
   "_deps/glfw-build/src/glfw3ConfigVersion.cmake"
@@ -179,6 +180,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/imgui.dir/DependInfo.cmake"
   "CMakeFiles/pulsar_sim.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/glfw.dir/DependInfo.cmake"

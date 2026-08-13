@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-src -I/Users/dev.daksh/code/pulsar/build/_deps/glfw-src/include -I/Users/dev.daksh/code/pulsar/build/_deps/glad-build/include -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+CXX_INCLUDES = -I/Users/dev.daksh/code/pulsar/build/_deps/miniaudio-src -I/Users/dev.daksh/code/pulsar/build/_deps/glfw-src/include -I/Users/dev.daksh/code/pulsar/build/_deps/glad-build/include -I/Users/dev.daksh/code/pulsar/build/_deps/imgui-src -I/Users/dev.daksh/code/pulsar/build/_deps/imgui-src/backends -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
 
 CXX_FLAGSarm64 = -O3 -DNDEBUG -std=gnu++17 -arch arm64
 

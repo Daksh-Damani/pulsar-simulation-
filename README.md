@@ -73,14 +73,18 @@ All parameters can be adjusted interactively in real-time while the simulation i
 | `▼ DOWN` Arrow | **Decrease spin period ($P$)** | Clamped at min $0.1\text{ seconds}$ (extremely fast rotation) |
 | `► RIGHT` Arrow | **Increase magnetic inclination ($\alpha$)** | Clamped at max $90.0^\circ$ (beams rotate horizontally) |
 | `◄ LEFT` Arrow | **Decrease magnetic inclination ($\alpha$)** | Clamped at min $0.0^\circ$ (beams align with the spin axis) |
-| `R` Key | **Toggle Radiation Wavefronts** | Enables/disables the propagating purple wave shells |
-| `ESC` Key | **Exit Simulation** | Closes window and shuts down the audio engine cleanly |
+| `M` Key | **Toggle Magnetic Field Lines** | Toggles the 3D procedural magnetic dipole field loops |
+| `R` Key | **Toggle Radiation Wavefronts** | Toggles the expanding purple radio emission shells |
+| `I` Key | **Toggle Information Sidebar** | Toggles the on-screen Dear ImGui science overlay panel |
+| `Mouse Drag` | **Orbit Camera** | Free 360-degree interactive camera rotation |
+| `Mouse Scroll` | **Zoom Camera** | Zoom the camera viewport in and out |
+| `ESC` Key | **Exit Simulation** | Closes the window and shuts down the audio engine cleanly |
 
 ---
 
 ## 🛠️ Build and Installation Guide
 
-This project uses **CMake** and C++17. All major dependencies (GLFW, GLAD, and miniaudio) are automatically downloaded, compiled, and linked during the build configuration using CMake's `FetchContent` module.
+This project uses **CMake** and C++17. All major dependencies (GLFW, GLAD, Dear ImGui, and miniaudio) are automatically downloaded, compiled, and linked during the build configuration using CMake's `FetchContent` module.
 
 ### Prerequisites
 

@@ -98,6 +98,9 @@ pulsar_sim: CMakeFiles/pulsar_sim.dir/build.make
 pulsar_sim: _deps/glfw-build/src/libglfw3.a
 pulsar_sim: _deps/glad-build/libglad.a
 pulsar_sim: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework
+pulsar_sim: libimgui.a
+pulsar_sim: _deps/glfw-build/src/libglfw3.a
+pulsar_sim: _deps/glad-build/libglad.a
 pulsar_sim: CMakeFiles/pulsar_sim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pulsar_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pulsar_sim.dir/link.txt --verbose=$(VERBOSE)

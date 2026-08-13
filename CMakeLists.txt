@@ -35,6 +35,11 @@ FetchContent_Declare(
     URL      https://github.com/mackron/miniaudio/archive/refs/tags/0.11.21.tar.gz
 )
 
+FetchContent_Declare(
+    imgui
+    URL      https://github.com/ocornut/imgui/archive/refs/tags/v1.89.9.tar.gz
+)
+
 message(STATUS "Fetching GLFW...")
 FetchContent_MakeAvailable(glfw)
 
@@ -44,10 +49,27 @@ FetchContent_MakeAvailable(glad)
 message(STATUS "Fetching miniaudio...")
 FetchContent_MakeAvailable(miniaudio)
 
+message(STATUS "Fetching ImGui...")
+FetchContent_MakeAvailable(imgui)
+
+add_library(imgui STATIC
+    ${imgui_SOURCE_DIR}/imgui.cpp
+    ${imgui_SOURCE_DIR}/imgui_draw.cpp
+    ${imgui_SOURCE_DIR}/imgui_widgets.cpp
+    ${imgui_SOURCE_DIR}/imgui_tables.cpp
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
+)
+target_include_directories(imgui PUBLIC
+    ${imgui_SOURCE_DIR}
+    ${imgui_SOURCE_DIR}/backends
+)
+target_link_libraries(imgui PUBLIC glfw glad)
+
 add_executable(pulsar_sim main.cpp)
 
 find_package(OpenGL REQUIRED)
 
-target_link_libraries(pulsar_sim PRIVATE glfw glad OpenGL::GL)
+target_link_libraries(pulsar_sim PRIVATE glfw glad OpenGL::GL imgui)
 target_include_directories(pulsar_sim PRIVATE ${miniaudio_SOURCE_DIR})
 

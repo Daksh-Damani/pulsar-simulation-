@@ -20,6 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -41,14 +43,14 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/uname"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/uname"
       - "/Users/dev.daksh/vcpkg/uname"
       - "/opt/homebrew/opt/openjdk@17/bin/uname"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/uname"
@@ -63,6 +65,8 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -86,20 +90,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -132,6 +123,8 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -153,14 +146,14 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/gmake"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/gmake"
       - "/Users/dev.daksh/vcpkg/gmake"
       - "/opt/homebrew/opt/openjdk@17/bin/gmake"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/gmake"
@@ -182,13 +175,13 @@ events:
       - "/opt/pmk/env/global/bin/gmake"
       - "/Library/Apple/usr/bin/gmake"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/gmake"
-      - "/Users/dev.daksh/development/flutter/bin/gmake"
       - "/Users/dev.daksh/.cargo/bin/gmake"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/gmake"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/gmake"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/gmake"
       - "/opt/nvim/bin/gmake"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/gmake"
+      - "/Users/dev.daksh/development/flutter/bin/make"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/make"
       - "/Users/dev.daksh/vcpkg/make"
       - "/opt/homebrew/opt/openjdk@17/bin/make"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/make"
@@ -203,6 +196,8 @@ events:
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -226,20 +221,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -270,6 +252,8 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -291,14 +275,14 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/c++"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/c++"
       - "/Users/dev.daksh/vcpkg/c++"
       - "/opt/homebrew/opt/openjdk@17/bin/c++"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/c++"
@@ -313,6 +297,8 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -336,20 +322,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -381,6 +354,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -404,20 +379,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -506,6 +468,8 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -526,16 +490,16 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -559,20 +523,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -598,6 +549,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -618,16 +571,16 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -651,20 +604,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -690,6 +630,8 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -710,16 +652,16 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -743,20 +685,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -782,6 +711,8 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -802,16 +733,16 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -835,20 +766,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -874,6 +792,8 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -894,16 +814,16 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -927,20 +847,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -966,6 +873,8 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -986,16 +895,16 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1019,20 +928,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1058,6 +954,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -1078,15 +976,15 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/objcopy"
+      - "/Users/dev.daksh/development/flutter/bin/objcopy"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/objcopy"
       - "/Users/dev.daksh/vcpkg/objcopy"
       - "/opt/homebrew/opt/openjdk@17/bin/objcopy"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/objcopy"
@@ -1107,16 +1005,16 @@ events:
       - "/opt/pmk/env/global/bin/objcopy"
       - "/Library/Apple/usr/bin/objcopy"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/objcopy"
-      - "/Users/dev.daksh/development/flutter/bin/objcopy"
       - "/Users/dev.daksh/.cargo/bin/objcopy"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/objcopy"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/objcopy"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/objcopy"
       - "/opt/nvim/bin/objcopy"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/objcopy"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1140,20 +1038,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1179,6 +1064,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -1199,15 +1086,15 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/readelf"
+      - "/Users/dev.daksh/development/flutter/bin/readelf"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/readelf"
       - "/Users/dev.daksh/vcpkg/readelf"
       - "/opt/homebrew/opt/openjdk@17/bin/readelf"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/readelf"
@@ -1228,16 +1115,16 @@ events:
       - "/opt/pmk/env/global/bin/readelf"
       - "/Library/Apple/usr/bin/readelf"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/readelf"
-      - "/Users/dev.daksh/development/flutter/bin/readelf"
       - "/Users/dev.daksh/.cargo/bin/readelf"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/readelf"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/readelf"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/readelf"
       - "/opt/nvim/bin/readelf"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/readelf"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1261,20 +1148,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1300,6 +1174,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -1320,15 +1196,15 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/Users/dev.daksh/development/flutter/bin/dlltool"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/dlltool"
       - "/Users/dev.daksh/vcpkg/dlltool"
       - "/opt/homebrew/opt/openjdk@17/bin/dlltool"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/dlltool"
@@ -1349,16 +1225,16 @@ events:
       - "/opt/pmk/env/global/bin/dlltool"
       - "/Library/Apple/usr/bin/dlltool"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/dlltool"
-      - "/Users/dev.daksh/development/flutter/bin/dlltool"
       - "/Users/dev.daksh/.cargo/bin/dlltool"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/dlltool"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/dlltool"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/dlltool"
       - "/opt/nvim/bin/dlltool"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/dlltool"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1382,20 +1258,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1421,6 +1284,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -1441,15 +1306,15 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/addr2line"
+      - "/Users/dev.daksh/development/flutter/bin/addr2line"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/addr2line"
       - "/Users/dev.daksh/vcpkg/addr2line"
       - "/opt/homebrew/opt/openjdk@17/bin/addr2line"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/addr2line"
@@ -1470,16 +1335,16 @@ events:
       - "/opt/pmk/env/global/bin/addr2line"
       - "/Library/Apple/usr/bin/addr2line"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/addr2line"
-      - "/Users/dev.daksh/development/flutter/bin/addr2line"
       - "/Users/dev.daksh/.cargo/bin/addr2line"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/addr2line"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/addr2line"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/addr2line"
       - "/opt/nvim/bin/addr2line"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/addr2line"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1503,20 +1368,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1542,6 +1394,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -1562,15 +1416,15 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/Users/dev.daksh/development/flutter/bin/tapi"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/tapi"
       - "/Users/dev.daksh/vcpkg/tapi"
       - "/opt/homebrew/opt/openjdk@17/bin/tapi"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/tapi"
@@ -1591,16 +1445,16 @@ events:
       - "/opt/pmk/env/global/bin/tapi"
       - "/Library/Apple/usr/bin/tapi"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/tapi"
-      - "/Users/dev.daksh/development/flutter/bin/tapi"
       - "/Users/dev.daksh/.cargo/bin/tapi"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/tapi"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/tapi"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/tapi"
       - "/opt/nvim/bin/tapi"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1624,20 +1478,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1672,6 +1513,8 @@ events:
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1695,20 +1538,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1740,6 +1570,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1763,20 +1595,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1864,6 +1683,8 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -1885,14 +1706,14 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/install_name_tool"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/install_name_tool"
       - "/Users/dev.daksh/vcpkg/install_name_tool"
       - "/opt/homebrew/opt/openjdk@17/bin/install_name_tool"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/install_name_tool"
@@ -1907,6 +1728,8 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -1930,20 +1753,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -1958,8 +1768,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm"
-      binary: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm"
+      source: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ"
+      binary: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1973,19 +1783,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm'
+        Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_14c20/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_14c20.dir/build.make CMakeFiles/cmTC_14c20.dir/build
-        Building CXX object CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2b4a0/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2b4a0.dir/build.make CMakeFiles/cmTC_2b4a0.dir/build
+        Building CXX object CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.3.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.3.0
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -1999,13 +1809,13 @@ events:
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_14c20
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14c20.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_2b4a0
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b4a0.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.3.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_14c20 -L/usr/local/lib -v CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_2b4a0 -L/usr/local/lib -v CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1267
         BUILD 16:38:58 Jun  8 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -2018,7 +1828,7 @@ events:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_14c20
+        /usr/bin/c++  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2b4a0
         
       exitCode: 0
   -
@@ -2064,19 +1874,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm']
+        ignore line: [Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_14c20/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_14c20.dir/build.make CMakeFiles/cmTC_14c20.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2b4a0/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2b4a0.dir/build.make CMakeFiles/cmTC_2b4a0.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-GCYsMm -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-FJ07aJ -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.3.0]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -2090,13 +1900,13 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_14c20]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14c20.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_2b4a0]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b4a0.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_14c20 -L/usr/local/lib -v CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_2b4a0 -L/usr/local/lib -v CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -2113,10 +1923,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_14c20] ==> ignore
+          arg [cmTC_2b4a0] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_14c20.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_2b4a0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
@@ -2160,8 +1970,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3"
-      binary: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3"
+      source: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E"
+      binary: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2174,18 +1984,18 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3'
+        Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5395/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d5395.dir/build.make CMakeFiles/cmTC_d5395.dir/build
-        Building C object CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fae76/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fae76.dir/build.make CMakeFiles/cmTC_fae76.dir/build
+        Building C object CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.3.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3 -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.3.0
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
@@ -2198,13 +2008,13 @@ events:
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking C executable cmTC_d5395
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5395.dir/link.txt --verbose=1
+        Linking C executable cmTC_fae76
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fae76.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.1.1.101)
         Target: arm64-apple-darwin25.3.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_d5395 -L/usr/local/lib -v CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_fae76 -L/usr/local/lib -v CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1267
         BUILD 16:38:58 Jun  8 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -2217,7 +2027,7 @@ events:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/cc  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -o cmTC_d5395
+        /usr/bin/cc  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -o cmTC_fae76
         
       exitCode: 0
   -
@@ -2261,18 +2071,18 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3']
+        ignore line: [Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5395/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d5395.dir/build.make CMakeFiles/cmTC_d5395.dir/build]
-        ignore line: [Building C object CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fae76/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fae76.dir/build.make CMakeFiles/cmTC_fae76.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3 -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-ob3RC3 -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.5 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E -target-linker-version 1267 -v -fcoverage-compilation-dir=/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-33Pz5E -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.0.0 (clang-2100.1.1.101) default target arm64-apple-darwin25.3.0]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
@@ -2285,13 +2095,13 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_d5395]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5395.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_fae76]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fae76.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.1.1.101)]
         ignore line: [Target: arm64-apple-darwin25.3.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_d5395 -L/usr/local/lib -v CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_fae76 -L/usr/local/lib -v CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -2308,10 +2118,10 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_d5395] ==> ignore
+          arg [cmTC_fae76] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_d5395.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_fae76.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
         linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
@@ -2354,7 +2164,7 @@ events:
       - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2158:EVAL:2 (__FetchContent_doPopulation)"
       - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2158 (cmake_language)"
       - "/opt/homebrew/share/cmake/Modules/FetchContent.cmake:2399 (__FetchContent_Populate)"
-      - "CMakeLists.txt:39 (FetchContent_MakeAvailable)"
+      - "CMakeLists.txt:44 (FetchContent_MakeAvailable)"
     mode: "program"
     variable: "GIT_EXECUTABLE"
     description: "Git command line client"
@@ -2369,6 +2179,8 @@ events:
     names:
       - "git"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -2390,13 +2202,11 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/bin/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
@@ -2431,6 +2241,8 @@ events:
       - "/Applications/Xcode.app/Contents/Applications/"
       - "/Applications/Xcode.app/Contents/Developer/Applications/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/git"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/git"
       - "/Users/dev.daksh/vcpkg/git"
       - "/opt/homebrew/opt/openjdk@17/bin/git"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/git"
@@ -2445,6 +2257,8 @@ events:
     found: "/usr/bin/git"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -2468,20 +2282,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -2516,8 +2317,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-E8WzeT"
-      binary: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-E8WzeT"
+      source: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-uWXF3W"
+      binary: "/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-uWXF3W"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: ""
@@ -2531,15 +2332,15 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-E8WzeT'
+        Change Dir: '/Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-uWXF3W'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf4ee/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cf4ee.dir/build.make CMakeFiles/cmTC_cf4ee.dir/build
-        Building C object CMakeFiles/cmTC_cf4ee.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -MD -MT CMakeFiles/cmTC_cf4ee.dir/src.c.o -MF CMakeFiles/cmTC_cf4ee.dir/src.c.o.d -o CMakeFiles/cmTC_cf4ee.dir/src.c.o -c /Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-E8WzeT/src.c
-        Linking C executable cmTC_cf4ee
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf4ee.dir/link.txt --verbose=1
-        /usr/bin/cc  -arch arm64 CMakeFiles/cmTC_cf4ee.dir/src.c.o -o cmTC_cf4ee
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_557de/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_557de.dir/build.make CMakeFiles/cmTC_557de.dir/build
+        Building C object CMakeFiles/cmTC_557de.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -MD -MT CMakeFiles/cmTC_557de.dir/src.c.o -MF CMakeFiles/cmTC_557de.dir/src.c.o.d -o CMakeFiles/cmTC_557de.dir/src.c.o -c /Users/dev.daksh/code/pulsar/build/CMakeFiles/CMakeScratch/TryCompile-uWXF3W/src.c
+        Linking C executable cmTC_557de
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_557de.dir/link.txt --verbose=1
+        /usr/bin/cc  -arch arm64 CMakeFiles/cmTC_557de.dir/src.c.o -o cmTC_557de
         
       exitCode: 0
   -
@@ -2573,6 +2374,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -2596,20 +2399,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -2675,6 +2465,8 @@ events:
     found: "/opt/homebrew/Frameworks/Python.framework/Versions/3.14/bin/python3.14"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -2698,20 +2490,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -2739,7 +2518,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake:356 (find_library)"
-      - "CMakeLists.txt:49 (find_package)"
+      - "CMakeLists.txt:71 (find_package)"
     mode: "library"
     variable: "OPENGL_gl_LIBRARY"
     description: "OpenGL GL library"
@@ -2755,6 +2534,8 @@ events:
       - "OpenGL"
       - "GL"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -2771,12 +2552,10 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
@@ -2794,6 +2573,8 @@ events:
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -2817,20 +2598,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -2865,7 +2633,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake:358 (find_library)"
-      - "CMakeLists.txt:49 (find_package)"
+      - "CMakeLists.txt:71 (find_package)"
     mode: "library"
     variable: "OPENGL_glu_LIBRARY"
     description: "OpenGL GLU library"
@@ -2881,6 +2649,8 @@ events:
       - "OpenGL"
       - "GLU"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -2897,12 +2667,10 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/Library/Apple/usr/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
@@ -2920,6 +2688,8 @@ events:
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -2943,20 +2713,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -2991,7 +2748,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake:360 (find_path)"
-      - "CMakeLists.txt:49 (find_package)"
+      - "CMakeLists.txt:71 (find_package)"
     mode: "path"
     variable: "OPENGL_INCLUDE_DIR"
     description: "Include for OpenGL"
@@ -3007,6 +2764,8 @@ events:
       - "OpenGL/gl.h"
       - "GL/gl.h"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -3028,13 +2787,11 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/include/"
@@ -3065,6 +2822,8 @@ events:
       - "/Network/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/OpenGL.framework/Headers/gl.h"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/OpenGL.framework/Headers/gl.h"
       - "/Users/dev.daksh/vcpkg/OpenGL.framework/Headers/gl.h"
       - "/opt/homebrew/opt/openjdk@17/bin/OpenGL.framework/Headers/gl.h"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/OpenGL.framework/Headers/gl.h"
@@ -3086,13 +2845,11 @@ events:
       - "/opt/pmk/env/global/bin/OpenGL.framework/Headers/gl.h"
       - "/Library/Apple/usr/bin/OpenGL.framework/Headers/gl.h"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/OpenGL.framework/Headers/gl.h"
-      - "/Users/dev.daksh/development/flutter/bin/OpenGL.framework/Headers/gl.h"
       - "/Users/dev.daksh/.cargo/bin/OpenGL.framework/Headers/gl.h"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/OpenGL.framework/Headers/gl.h"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/OpenGL.framework/Headers/gl.h"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/OpenGL.framework/Headers/gl.h"
       - "/opt/nvim/bin/OpenGL.framework/Headers/gl.h"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/OpenGL.framework/Headers/gl.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/OpenGL.framework/Headers/gl.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/OpenGL.framework/Headers/gl.h"
       - "/opt/homebrew/include/OpenGL.framework/Headers/gl.h"
@@ -3119,6 +2876,8 @@ events:
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -3142,20 +2901,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
@@ -3190,7 +2936,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake:362 (find_path)"
-      - "CMakeLists.txt:49 (find_package)"
+      - "CMakeLists.txt:71 (find_package)"
     mode: "path"
     variable: "OPENGL_GLU_INCLUDE_DIR"
     description: "Include for the OpenGL GLU library"
@@ -3206,6 +2952,8 @@ events:
       - "OpenGL/glu.h"
       - "GL/glu.h"
     candidate_directories:
+      - "/Users/dev.daksh/development/flutter/bin/"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/"
       - "/Users/dev.daksh/vcpkg/"
       - "/opt/homebrew/opt/openjdk@17/bin/"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/"
@@ -3227,13 +2975,11 @@ events:
       - "/opt/pmk/env/global/bin/"
       - "/Library/Apple/usr/bin/"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/"
-      - "/Users/dev.daksh/development/flutter/bin/"
       - "/Users/dev.daksh/.cargo/bin/"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/"
       - "/opt/nvim/bin/"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/include/"
@@ -3264,6 +3010,8 @@ events:
       - "/Network/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
+      - "/Users/dev.daksh/development/flutter/bin/OpenGL.framework/Headers/glu.h"
+      - "/Users/dev.daksh/.gemini/antigravity-ide/bin/OpenGL.framework/Headers/glu.h"
       - "/Users/dev.daksh/vcpkg/OpenGL.framework/Headers/glu.h"
       - "/opt/homebrew/opt/openjdk@17/bin/OpenGL.framework/Headers/glu.h"
       - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin/OpenGL.framework/Headers/glu.h"
@@ -3285,13 +3033,11 @@ events:
       - "/opt/pmk/env/global/bin/OpenGL.framework/Headers/glu.h"
       - "/Library/Apple/usr/bin/OpenGL.framework/Headers/glu.h"
       - "/Applications/Postgres.app/Contents/Versions/latest/bin/OpenGL.framework/Headers/glu.h"
-      - "/Users/dev.daksh/development/flutter/bin/OpenGL.framework/Headers/glu.h"
       - "/Users/dev.daksh/.cargo/bin/OpenGL.framework/Headers/glu.h"
       - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin/OpenGL.framework/Headers/glu.h"
       - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin/OpenGL.framework/Headers/glu.h"
       - "/Users/dev.daksh/Library/Android/sdk/platform-tools/OpenGL.framework/Headers/glu.h"
       - "/opt/nvim/bin/OpenGL.framework/Headers/glu.h"
-      - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/OpenGL.framework/Headers/glu.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/OpenGL.framework/Headers/glu.h"
       - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/OpenGL.framework/Headers/glu.h"
       - "/opt/homebrew/include/OpenGL.framework/Headers/glu.h"
@@ -3318,6 +3064,8 @@ events:
     found: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework"
     search_context:
       ENV{PATH}:
+        - "/Users/dev.daksh/development/flutter/bin"
+        - "/Users/dev.daksh/.gemini/antigravity-ide/bin"
         - "/Users/dev.daksh/vcpkg"
         - "/opt/homebrew/opt/openjdk@17/bin"
         - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
@@ -3341,20 +3089,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Applications/Postgres.app/Contents/Versions/latest/bin"
         - "/Users/dev.daksh/development/flutter/bin"
-        - "/Users/dev.daksh/vcpkg"
-        - "/opt/homebrew/opt/openjdk@17/bin"
-        - "/Users/dev.daksh/.antigravity-ide/antigravity-ide/bin"
-        - "/Library/PostgreSQL/18/bin"
-        - "/Users/dev.daksh/.local/bin"
-        - "/opt/homebrew/lib/ruby/gems/4.0.0/bin"
-        - "/opt/homebrew/opt/ruby/bin"
-        - "/usr/local/mysql/bin"
         - "/Users/dev.daksh/.cargo/bin"
-        - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
-        - "/Users/dev.daksh/Library/Android/sdk/platform-tools"
-        - "/opt/nvim/bin"
-        - "/Users/dev.daksh/.antigravity-ide/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
         - "/Users/dev.daksh/Documents/FlutterDev/sdk/flutter/bin"
         - "/Users/dev.daksh/Library/Android/sdk/cmdline-tools/latest/bin"
         - "/Users/dev.daksh/Library/Android/sdk/platform-tools"

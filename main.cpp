@@ -7,6 +7,10 @@
 #include <atomic>
 #include <cstdlib>
 
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
+
 #define MINIAUDIO_IMPLEMENTATION
 #include "miniaudio.h"
 
@@ -89,6 +93,377 @@ float noise(vec3 x) {
     );
 }
 
+float drawSegment(vec2 p, vec2 a, vec2 b, float r) {
+    vec2 pa = p - a, ba = b - a;
+    float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
+    return smoothstep(r, 0.0, length(pa - ba * h));
+}
+
+float drawLetter(int letter, vec2 p, vec2 size) {
+    vec2 uv = p / size;
+    if (uv.x < 0.0 || uv.x > 1.0 || uv.y < 0.0 || uv.y > 1.0) return 0.0;
+    
+    float d = 0.0;
+    float th = 0.038;
+    
+    if (letter == 80) { // P
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.5), vec2(0.6, 0.9), th));
+    } else if (letter == 73) { // I
+        d = max(d, drawSegment(uv, vec2(0.4, 0.1), vec2(0.4, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 77) { // M
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.4, 0.4), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.9), vec2(0.4, 0.4), th));
+    } else if (letter == 87) { // W
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.3, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.9), vec2(0.5, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.3, 0.1), vec2(0.4, 0.6), th));
+        d = max(d, drawSegment(uv, vec2(0.5, 0.1), vec2(0.4, 0.6), th));
+    } else if (letter == 65) { // A
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.4, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.4, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.3, 0.4), vec2(0.5, 0.4), th));
+    } else if (letter == 84) { // T
+        d = max(d, drawSegment(uv, vec2(0.4, 0.1), vec2(0.4, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+    } else if (letter == 69) { // E
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.5, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 82) { // R
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.5), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.3, 0.5), vec2(0.6, 0.1), th));
+    } else if (letter == 79) { // O
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 68) { // D
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.5, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.5, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.5, 0.1), vec2(0.6, 0.3), th));
+        d = max(d, drawSegment(uv, vec2(0.5, 0.9), vec2(0.6, 0.7), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.3), vec2(0.6, 0.7), th));
+    } else if (letter == 78) { // N
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.1), th));
+    } else if (letter == 83) { // S
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.5), th));
+    } else if (letter == 86) { // V
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.4, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.9), vec2(0.4, 0.1), th));
+    } else if (letter == 76) { // L
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 71) { // G
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.4, 0.5), vec2(0.6, 0.5), th));
+    } else if (letter == 70) { // F
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.5, 0.5), th));
+    } else if (letter == 67) { // C
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 72) { // H
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+    } else if (letter == 85) { // U
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 75) { // K
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.1), th));
+    } else if (letter == 66) { // B
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.55, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.55, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.55, 0.5), vec2(0.55, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+    } else if (letter == 81) { // Q
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+        d = max(d, drawSegment(uv, vec2(0.4, 0.3), vec2(0.65, 0.05), th));
+    } else if (letter == 48) { // 0
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 49) { // 1
+        d = max(d, drawSegment(uv, vec2(0.4, 0.1), vec2(0.4, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 50) { // 2
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.5), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 51) { // 3
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 52) { // 4
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+    } else if (letter == 53) { // 5
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 54) { // 6
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 55) { // 7
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+    } else if (letter == 56) { // 8
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.1), th));
+    } else if (letter == 57) { // 9
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.2, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.1), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.9), vec2(0.6, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+    } else if (letter == 61) { // =
+        d = max(d, drawSegment(uv, vec2(0.2, 0.6), vec2(0.6, 0.6), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.4), vec2(0.6, 0.4), th));
+    } else if (letter == 46) { // .
+        d = max(d, drawSegment(uv, vec2(0.4, 0.1), vec2(0.4, 0.2), th * 1.5));
+    } else if (letter == 42) { // *
+        d = max(d, drawSegment(uv, vec2(0.4, 0.3), vec2(0.4, 0.7), th));
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.6, 0.5), th));
+    } else if (letter == 47) { // /
+        d = max(d, drawSegment(uv, vec2(0.2, 0.1), vec2(0.6, 0.9), th));
+    } else if (letter == 94) { // ^
+        d = max(d, drawSegment(uv, vec2(0.2, 0.5), vec2(0.4, 0.9), th));
+        d = max(d, drawSegment(uv, vec2(0.6, 0.5), vec2(0.4, 0.9), th));
+    }
+    return d;
+}
+
+float drawString_PERIOD(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 6.0;
+    d = max(d, drawLetter(80, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // P
+    d = max(d, drawLetter(69, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // E
+    d = max(d, drawLetter(82, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // R
+    d = max(d, drawLetter(73, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // I
+    d = max(d, drawLetter(79, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // O
+    d = max(d, drawLetter(68, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // D
+    return d;
+}
+
+float drawString_INCLIN(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 6.0;
+    d = max(d, drawLetter(73, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // I
+    d = max(d, drawLetter(78, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // N
+    d = max(d, drawLetter(67, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // C
+    d = max(d, drawLetter(76, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // L
+    d = max(d, drawLetter(73, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // I
+    d = max(d, drawLetter(78, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // N
+    return d;
+}
+
+float drawString_MAG(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 3.0;
+    d = max(d, drawLetter(77, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // M
+    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(71, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // G
+    return d;
+}
+
+float drawString_WAVES(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 5.0;
+    d = max(d, drawLetter(87, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // W
+    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(86, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // V
+    d = max(d, drawLetter(69, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // E
+    d = max(d, drawLetter(83, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // S
+    return d;
+}
+
+float drawString_VELA(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 4.0;
+    d = max(d, drawLetter(86, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // V
+    d = max(d, drawLetter(69, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // E
+    d = max(d, drawLetter(76, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // L
+    d = max(d, drawLetter(65, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // A
+    return d;
+}
+
+float drawString_PULSAR(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 6.0;
+    d = max(d, drawLetter(80, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // P
+    d = max(d, drawLetter(85, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // U
+    d = max(d, drawLetter(76, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // L
+    d = max(d, drawLetter(83, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // S
+    d = max(d, drawLetter(65, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(82, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // R
+    return d;
+}
+
+float drawString_DEV(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 3.0;
+    d = max(d, drawLetter(68, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // D
+    d = max(d, drawLetter(69, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // E
+    d = max(d, drawLetter(86, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // V
+    return d;
+}
+
+float drawString_MATH(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 4.0;
+    d = max(d, drawLetter(77, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // M
+    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(84, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // T
+    d = max(d, drawLetter(72, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // H
+    return d;
+}
+
+float drawString_DAKSH(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 5.0;
+    d = max(d, drawLetter(68, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // D
+    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(75, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // K
+    d = max(d, drawLetter(83, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // S
+    d = max(d, drawLetter(72, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // H
+    return d;
+}
+
+float drawString_HUTANSH(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 7.0;
+    d = max(d, drawLetter(72, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // H
+    d = max(d, drawLetter(85, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // U
+    d = max(d, drawLetter(84, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // T
+    d = max(d, drawLetter(65, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(78, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // N
+    d = max(d, drawLetter(83, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // S
+    d = max(d, drawLetter(72, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // H
+    return d;
+}
+
+float drawString_MASS(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 8.0;
+    d = max(d, drawLetter(77, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // M
+    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(83, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // S
+    d = max(d, drawLetter(83, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // S
+    d = max(d, drawLetter(61, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // =
+    d = max(d, drawLetter(49, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // 1
+    d = max(d, drawLetter(46, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // .
+    d = max(d, drawLetter(52, p - vec2(7.0 * w, 0.0), vec2(w, size.y))); // 4
+    return d;
+}
+
+float drawString_RAD(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 8.0;
+    d = max(d, drawLetter(82, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // R
+    d = max(d, drawLetter(65, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // A
+    d = max(d, drawLetter(68, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // D
+    d = max(d, drawLetter(61, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // =
+    d = max(d, drawLetter(49, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // 1
+    d = max(d, drawLetter(50, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // 2
+    d = max(d, drawLetter(75, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // K
+    d = max(d, drawLetter(77, p - vec2(7.0 * w, 0.0), vec2(w, size.y))); // M
+    return d;
+}
+
+float drawString_FIELD(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 8.0;
+    d = max(d, drawLetter(66, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // B
+    d = max(d, drawLetter(61, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // =
+    d = max(d, drawLetter(49, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // 1
+    d = max(d, drawLetter(48, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // 0
+    d = max(d, drawLetter(94, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // ^
+    d = max(d, drawLetter(49, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // 1
+    d = max(d, drawLetter(50, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // 2
+    d = max(d, drawLetter(71, p - vec2(7.0 * w, 0.0), vec2(w, size.y))); // G
+    return d;
+}
+
+float drawString_EQS(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 3.0;
+    d = max(d, drawLetter(69, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // E
+    d = max(d, drawLetter(81, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // Q
+    d = max(d, drawLetter(83, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // S
+    return d;
+}
+
+float drawString_EQ_DIPOLE(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 8.0;
+    d = max(d, drawLetter(82, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // R
+    d = max(d, drawLetter(61, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // =
+    d = max(d, drawLetter(82, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // R
+    d = max(d, drawLetter(48, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // 0
+    d = max(d, drawLetter(83, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // S
+    d = max(d, drawLetter(73, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // I
+    d = max(d, drawLetter(78, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // N
+    d = max(d, drawLetter(50, p - vec2(7.0 * w, 0.0), vec2(w, size.y))); // 2
+    return d;
+}
+
+float drawString_EQ_PHASE(vec2 p, vec2 size) {
+    float d = 0.0;
+    float w = size.x / 7.0;
+    d = max(d, drawLetter(84, p - vec2(0.0 * w, 0.0), vec2(w, size.y))); // T
+    d = max(d, drawLetter(72, p - vec2(1.0 * w, 0.0), vec2(w, size.y))); // H
+    d = max(d, drawLetter(61, p - vec2(2.0 * w, 0.0), vec2(w, size.y))); // =
+    d = max(d, drawLetter(87, p - vec2(3.0 * w, 0.0), vec2(w, size.y))); // W
+    d = max(d, drawLetter(42, p - vec2(4.0 * w, 0.0), vec2(w, size.y))); // *
+    d = max(d, drawLetter(68, p - vec2(5.0 * w, 0.0), vec2(w, size.y))); // D
+    d = max(d, drawLetter(84, p - vec2(6.0 * w, 0.0), vec2(w, size.y))); // T
+    return d;
+}
+
 void main() {
     vec2 uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / u_resolution.y;
 
@@ -133,7 +508,7 @@ void main() {
         vec3 c_color = vec3(0.9, 0.95, 1.0);
 
         float omega = 2.0 * 3.14159265 / u_period;
-        float theta = omega * u_time - 1.25 * d;
+        float theta = omega * (u_time - d / 5.0);
 
         vec3 m = vec3(sin(u_inclination) * cos(theta), cos(u_inclination), sin(u_inclination) * sin(theta));
         float cos_beta = dot(normalize(p), m);
@@ -150,7 +525,7 @@ void main() {
         float wave_dens = 0.0;
         vec3 w_color = vec3(0.65, 0.15, 1.0);
         if (u_show_waves != 0) {
-            float wave_phase = d * 6.5 - omega * u_time * 2.0;
+            float wave_phase = 2.0 * omega * (u_time - d / 5.0);
             float wave_val = sin(wave_phase);
             float wave_shape = pow(max(0.0, wave_val), 10.0);
             wave_dens = wave_shape * (0.22 / (0.12 + d * d)) * (0.45 + 0.55 * noise(p * 3.0 + u_time));
@@ -203,81 +578,7 @@ void main() {
     final_color = vec3(1.0) - exp(-final_color * 1.6);
     final_color = pow(final_color, vec3(1.0 / 2.2));
 
-    // Glassmorphic HUD overlay
-    if (u_show_info != 0) {
-        vec2 hud_uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / u_resolution.y;
-        vec2 center = vec2(0.0, 0.0);
-        vec2 size = vec2(0.55, 0.38);
-        vec2 d_hud = abs(hud_uv - center) - size;
-        float card_dist = max(d_hud.x, d_hud.y);
-        
-        if (card_dist < 0.0) {
-            vec3 card_bg = vec3(0.01, 0.03, 0.08);
-            float border_val = 1.0 - smoothstep(0.0, 0.003, abs(card_dist));
-            vec3 border_color = vec3(0.0, 0.75, 1.0);
-            
-            vec2 grid = abs(fract(hud_uv * 18.0 - 0.5) - 0.5) / 18.0;
-            float grid_line = min(grid.x, grid.y);
-            float grid_val = 1.0 - smoothstep(0.0, 0.0015, grid_line);
-            
-            final_color = mix(final_color * 0.12 + card_bg, border_color, border_val);
-            final_color += grid_val * vec3(0.0, 0.25, 0.5) * 0.15;
-            
-            // Progress Bar 1: Rotation Period
-            vec2 bar1_size = vec2(0.3, 0.012);
-            vec2 bar1_pos = vec2(0.0, 0.08);
-            vec2 d_bar1 = abs(hud_uv - bar1_pos) - bar1_size;
-            float dist_bar1 = max(d_bar1.x, d_bar1.y);
-            
-            if (dist_bar1 < 0.0) {
-                final_color = mix(final_color, vec3(0.06, 0.1, 0.18), 0.75);
-                float fill_ratio = (u_period - 0.1) / (10.0 - 0.1);
-                float x_local = (hud_uv.x - (bar1_pos.x - bar1_size.x)) / (2.0 * bar1_size.x);
-                if (x_local < fill_ratio) {
-                    final_color = mix(final_color, vec3(0.0, 0.85, 1.0), 0.9);
-                }
-            } else if (abs(dist_bar1) < 0.002) {
-                final_color = vec3(0.0, 0.8, 1.0);
-            }
-            
-            // Progress Bar 2: Magnetic Inclination
-            vec2 bar2_size = vec2(0.3, 0.012);
-            vec2 bar2_pos = vec2(0.0, -0.06);
-            vec2 d_bar2 = abs(hud_uv - bar2_pos) - bar2_size;
-            float dist_bar2 = max(d_bar2.x, d_bar2.y);
-            
-            if (dist_bar2 < 0.0) {
-                final_color = mix(final_color, vec3(0.06, 0.1, 0.18), 0.75);
-                float fill_ratio = u_inclination / (90.0 * 3.14159265 / 180.0);
-                float x_local = (hud_uv.x - (bar2_pos.x - bar2_size.x)) / (2.0 * bar2_size.x);
-                if (x_local < fill_ratio) {
-                    final_color = mix(final_color, vec3(1.0, 0.0, 0.6), 0.9);
-                }
-            } else if (abs(dist_bar2) < 0.002) {
-                final_color = vec3(1.0, 0.0, 0.6);
-            }
-            
-            // Status Indicator Dots
-            vec2 dot1_pos = vec2(-0.15, -0.18);
-            vec2 dot2_pos = vec2(0.15, -0.18);
-            
-            float d_dot1 = length(hud_uv - dot1_pos) - 0.015;
-            if (d_dot1 < 0.0) {
-                vec3 col = (u_show_magnetic_fields != 0) ? vec3(0.0, 1.0, 0.4) : vec3(0.5, 0.5, 0.5);
-                final_color = mix(final_color, col, 0.95);
-            } else if (abs(d_dot1) < 0.0015) {
-                final_color = vec3(1.0);
-            }
-            
-            float d_dot2 = length(hud_uv - dot2_pos) - 0.015;
-            if (d_dot2 < 0.0) {
-                vec3 col = (u_show_waves != 0) ? vec3(0.0, 1.0, 0.4) : vec3(0.5, 0.5, 0.5);
-                final_color = mix(final_color, col, 0.95);
-            } else if (abs(d_dot2) < 0.0015) {
-                final_color = vec3(1.0);
-            }
-        }
-    }
+    // HUD sidebar rendering is now handled natively via Dear ImGui in the main render loop.
 
     FragColor = vec4(final_color, 1.0);
 }
@@ -318,6 +619,14 @@ int main() {
         glfwTerminate();
         return -1;
     }
+
+    // Setup Dear ImGui context
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void)io;
+    ImGui::StyleColorsDark();
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 150");
 
     std::cout << "========================================================\n"
               << "            3D VOLUMETRIC PULSAR SIMULATION             \n"
@@ -460,9 +769,78 @@ int main() {
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
+        // 1. Start ImGui Frame
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        // 2. Info panel sidebar (toggled via 'I' key)
+        if (show_info.load()) {
+            ImGui::SetNextWindowPos(ImVec2(10, 10), ImGuiCond_Always);
+            ImGui::SetNextWindowSize(ImVec2(360, (float)displayHeight - 20), ImGuiCond_Always);
+            
+            // Modern translucent violet glassmorphic style
+            ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(0.015f, 0.01f, 0.03f, 0.85f));
+            ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(0.7f, 0.1f, 1.0f, 0.6f));
+            ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 8.0f);
+            ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 1.5f);
+            
+            ImGui::Begin("Information Panel", nullptr, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoTitleBar);
+            
+            ImGui::Spacing();
+            ImGui::TextColored(ImVec4(0.0f, 0.95f, 1.0f, 1.0f), " 3D Volumetric Pulsar Simulation");
+            ImGui::Separator();
+            ImGui::Spacing();
+            
+            ImGui::TextColored(ImVec4(0.75f, 0.4f, 1.0f, 1.0f), "What is a Pulsar?");
+            ImGui::TextWrapped("A pulsar is a highly magnetized, rapidly rotating neutron star formed from the collapsed core of a massive star. It emits beams of electromagnetic radiation out of its magnetic poles. Because the magnetic axis is tilted relative to the spin axis, these beams sweep through space like a lighthouse, creating periodic pulses of energy.");
+            ImGui::Spacing();
+            
+            ImGui::TextColored(ImVec4(0.75f, 0.4f, 1.0f, 1.0f), "Key Astrophysical Characteristics:");
+            ImGui::Text("- Radius (R)        : ~10 - 12 km");
+            ImGui::Text("- Mass (M)          : ~1.4 Solar Masses");
+            ImGui::Text("- Core Density (p)  : ~10^17 kg/m^3 (Nuclear Density)");
+            ImGui::Text("- Magnetic Field (B): ~10^12 Gauss (Trillions of Earth's)");
+            ImGui::Spacing();
+            ImGui::Separator();
+            ImGui::Spacing();
+            
+            ImGui::TextColored(ImVec4(0.75f, 0.4f, 1.0f, 1.0f), " How the Program Works");
+            ImGui::TextWrapped("This simulator models both the visual dynamics and the radio emissions of a pulsar through real-time graphics rendering and audio synthesis.\n\n"
+                               "- Volumetric Raymarching: Casts camera rays step-by-step evaluating core, beam, wave, and magnetic dipole density functions.\n\n"
+                               "- Real-Time Audio: Synthesizes high-frequency static noise, deep percussive thumps, and chirps synchronized with the rotating magnetic beam.");
+
+            ImGui::TextColored(ImVec4(0.75f, 0.4f, 1.0f, 1.0f), "Developed By : Daksh Damani & Hutansh Mishra ");
+
+            
+            ImGui::End();
+            ImGui::PopStyleVar(2);
+            ImGui::PopStyleColor(2);
+        }
+
+        // 3. Persistent corner overlay names/credits
+        {
+            ImGui::SetNextWindowPos(ImVec2((float)displayWidth - 385, (float)displayHeight - 40), ImGuiCond_Always);
+            ImGui::SetNextWindowSize(ImVec2(375, 30), ImGuiCond_Always);
+            ImGui::Begin("Credits Overlay", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoInputs | ImGuiWindowFlags_NoBackground);
+            ImGui::TextColored(ImVec4(0.0f, 0.95f, 1.0f, 0.65f), "Developer: Daksh Damani");
+            ImGui::SameLine(190);
+            ImGui::TextColored(ImVec4(1.0f, 0.25f, 0.7f, 0.65f), "Mathsby: Hutansh Mishra");
+            ImGui::End();
+        }
+
+        // 4. Render ImGui
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+
+    // Cleanup ImGui
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
 
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
@@ -512,6 +890,23 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
                       << "  beams of electromagnetic radiation out of its magnetic poles.\n"
                       << "  These beams sweep through space like a lighthouse, creating\n"
                       << "  periodic pulses of energy detected on Earth.\n\n"
+                      << " ASTROPHYSICAL CHARACTERISTICS:\n"
+                      << "  - Radius (R)       : ~10 - 12 km\n"
+                      << "  - Mass (M)         : ~1.4 Solar Masses (Chandrasekhar Limit)\n"
+                      << "  - Core Density (p) : ~10^17 kg/m^3 (Nuclear Density)\n"
+                      << "  - Magnetic Field(B): ~10^12 Gauss (Trillions of times Earth's)\n\n"
+                      << " MATHEMATICAL & PHYSICS EQUATIONS:\n"
+                      << "  1. Spin Angular Velocity: \n"
+                      << "     Omega = 2 * pi / P (P is spin period)\n"
+                      << "  2. Dipole Magnetic Field Lines: \n"
+                      << "     r = R0 * sin^2(theta) \n"
+                      << "  3. Retarded Rotation Phase (Speed of Light Delay c = 5.0): \n"
+                      << "     theta = Omega * (t - r / c) \n"
+                      << "  4. Lighthouse Alignment / Signal Amplitude: \n"
+                      << "     cos(beta) = v_camera . m_magnetic\n\n"
+                      << " PROJECT CREDITS:\n"
+                      << "  - Developer                  : Daksh Damani\n"
+                      << "  - Mathematics & Astrophysics : Hutansh Mishra\n\n"
                       << " ABOUT THIS PROJECT:\n"
                       << "  - Graphics: GPU-accelerated volumetric raymarching in GLSL.\n"
                       << "  - Audio: Real-time procedural synthesis synchronized with\n"
@@ -606,7 +1001,7 @@ void audio_data_callback(ma_device* pDevice, void* pOutput, const void* pInput, 
         double currentInclination = currentInclinationDeg * 3.1415926535897932 / 180.0;
 
         double omega = 2.0 * 3.1415926535897932 / currentPeriod;
-        double theta = omega * localTime - 1.25 * 4.8;
+        double theta = omega * (localTime - (double)cameraDistance.load() / 5.0);
 
         double mX = sin(currentInclination) * cos(theta);
         double mY = cos(currentInclination);
